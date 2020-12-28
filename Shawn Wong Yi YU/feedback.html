@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<!-- Start of HTML -->
+<html lang="en">
+	<!-- File Header Comments -->
+	<!-- Description: Feedback Page -->
+	<!-- Author: Shawn Wong Yi Yu -->
+	<!-- Date: 10 November 2020 -->
+	<!-- Validate: OK 21 November 2020 -->
+<!-- Start of Head -->
+<head>
+	<title>ASG</title>
+	<meta charset="utf-8">
+	<meta name="author" content="Shawn Wong">
+	<meta name="description" content="ASG">
+	<meta name="keywords" content="phone, apple, samsung, google">
+	<link rel="stylesheet" type="text/css" href="style.css"><!--To link to the external CSS file-->
+</head>
+<!-- End of Head -->
+
+<!-- Start of Body -->
+<body>
+
+<!-- Start of Header -->
+<header>
+	<div class="logo"><!-- A container for the logo image -->
+	<a href="https://asgphone.netlify.app/" title="ASG logo">
+		<img src="images/logo.png" class="logo" alt="logo">
+	</div>
+<!-- Start of Nav -->
+<nav>
+	<!-- Start of Navigation Menu -->
+	<ul>
+		<li><a href="index.html">Home</a></li>
+		<li><a href="apple.html" target="new_window">Apple</a></li>
+		<li><a href="samsung.html" target="new_window">Samsung</a></li>
+		<li><a href="google.html" target="new_window">Google</a></li>
+		<li><a href="feedback.html" target="new_window">Feedback</a></li>
+	</ul>
+	<!-- End of Navigation Menu -->	
+</nav>	
+<!-- End of Nav -->
+		
+</header>
+<!-- End of Header -->
+
+<!-- Start of Article -->
+<article>
+	<div class="head1"><h1>Feedback</h1></div><!-- A container for the heading -->
+	<h3>Rate my website!</h3>
+	
+<!-- Start of Form -->
+    <div class="feedback-form"><!-- A container for the feedback form -->
+	<form name="feedback" action="mailto:shawnwong111@gmail.com" method="post" enctype="text/plain">
+<!-- Start of Fieldset -->
+	<fieldset id="userinfo">
+		<legend>User Information</legend>
+<!-- Start of Table -->		
+	<table class="form1">
+		<tr>
+			<td>1.</td>
+			<td><label for="name">Name</label></td>
+			<td><input type="text" name="name" placeholder="Include your first name only" 
+			size="40" required="required" id="name"></td>
+		</tr>
+	
+		<tr>
+			<td>2.</td>
+			<td>Age</td>
+			<td>
+				<select name="type">
+					<option value="13-15" selected="selected">13-15</option>
+					<option value="16-20">16-20</option>
+					<option value="21-25">21-25</option>
+					<option value="26-30">26-30</option>
+					<option value="31-40">31-40</option>
+					<option value="41-50">41-50</option>
+				</select>
+			</td>
+		</tr>
+		
+		<tr>
+			<td>3.</td>
+			<td>Where are you from?</td>
+			<td>
+				<select name="region" size="10">
+					<optgroup label="Malaysian">
+						<option value="westmalaysia" selected="selected">West Malaysia</option>
+						<option value="eastmalaysia">East Malaysia</option>
+					</optgroup>
+					<optgroup label="Other">
+						<option value="africa">Africa</option>
+						<option value="asia">Asia</option>
+						<option value="thecaribbean">The Caribbean</option>
+						<option value="centralamerica">Central America</option>
+						<option value="europe">Europe</option>
+						<option value="northamerica">North America</option>
+						<option value="oceania">Oceania</option>
+						<option value="southamerica">South America</option>
+					</optgroup>
+				</select>
+			</td>
+		</tr>
+		
+		<tr>
+			<td>4.</td>
+			<td>What is your gender?</td>
+			<td>
+				<input type="radio" name="gender" value="male" checked="checked" id="male">
+				<label for ="male">Male</label>
+				<input type="radio" name="gender" value="female" id="female">
+				<label for ="female">Female</label>
+			</td>
+		</tr>
+	
+		<tr>
+			<td>5.</td>
+			<td>Phone Number</td>
+			<td><input type="text" name="phone" placeholder="(60)123456789"
+			maxlength="12" required="required" id="phone"></td>
+		</tr>
+	
+		<tr>
+			<td>6.</td>
+			<td><label for="email">Email</label></td>
+			<td><input type="email" name="email" placeholder="myname@example.com" size="40" id="email"></td>
+		</tr>
+	
+		<tr>
+			<td>7.</td>
+			<td>Submit Date</td>
+			<td><input type="date" name="date"></td>
+		</tr>
+	</table>
+<!-- End of Table -->
+	</fieldset>
+<!-- End of Fieldset -->
+	<br>
+	<br>
+<!-- Start of Fieldset -->
+	<fieldset id="usersatis">
+		<legend>User Satisfaction</legend>
+<!-- Start of Table -->
+	<table class="form2">
+		<tr>
+			<td>1.</td>
+			<td>Is this your first time you have visited the website?</td>
+			<td>
+				<input type="radio" name="visited" value="yes" id="yes">
+				<label for ="yes">Yes</label>
+				<input type="radio" name="visited" value="no" id="no">
+				<label for ="no">No</label>
+			</td>
+		</tr>
+		
+		<tr>
+			<td>2.</td>
+			<td><label for="reason">What is the main reason you came to this site?</label></td>
+			<td><textarea name="reason" rows="3" cols="40" 
+			required="required" id="reason"></textarea></td>
+		</tr>
+		
+		<tr>
+			<td>3.</td>
+			<td>Did you find what you needed on the website?</td>
+			<td>
+				<input type="radio" name="info" value="yes_all_of_it" id="yes_all_of_it">
+				<label for ="yes_all_of_it">Yes, all of it</label>
+				<input type="radio" name="info" value="yes_some_of_it" id="yes_some_of_it">
+				<label for ="yes_some_of_it">Yes, some of it</label>
+				<input type="radio" name="info" value="no_none_of_it" id="no_none_of_it">
+				<label for ="no_none_of_it">No, none of it</label>
+			</td>
+		</tr>
+		
+		<tr>
+			<td>4.</td>
+			<td>How visually appealing is the website?</td>
+			<td>
+				<input type="radio" name="visual" value="extremely_appealing" id="extremely_appealing">
+				<label for ="extremely_appealing">Extremely appealing</label>
+				<input type="radio" name="visual" value="somewhat_appealing" id="somewhat_appealing">
+				<label for ="somewhat_appealing">Somewhat appealing</label>
+				<input type="radio" name="visual" value="not_at_all_appealing" id="not_at_all_appealing">
+				<label for ="no_none_of_it">Not at all appealing</label>
+			</td>
+		</tr>
+		
+		<tr>
+            <td rowspan="2">5.</td>
+            <td rowspan="2">Please rate for our website</td>
+            <td>1=Not Bad, 2=Okay, 3=Excellent</td>
+		</tr>
+		
+        <tr>
+            <td><input name="rate" type="range" min="1" max="3" value="2"></td>
+        </tr>
+		
+		<tr>
+			<td>6.</td>
+			<td>What is the likelihood that you will visit the website again?</td>
+			<td>
+				<input type="radio" name="likelihood" value="extremely_likely" id="extremely_likely">
+				<label for ="extremely_likely">Extremely likely</label>
+				<input type="radio" name="likelihood" value="moderately_likely" id="moderately_likely">
+				<label for ="moderately_likely">Moderately likely</label>
+				<input type="radio" name="likelihood" value="not_at_all_likely" id="not_at_all_likely">
+				<label for ="not_at_all_likely">Not at all likely</label>
+			</td>
+		</tr>
+		
+		<tr>
+			<td>7.</td>
+			<td><label for="advice">Do you have any other comments on how we can improve our website?</label></td>
+			<td><textarea name="advice" rows="4" cols="50" 
+			required="required" id="advice"></textarea></td>
+		</tr>
+
+	</table>
+<!-- End of Table -->
+	</fieldset>
+<!-- End of Fieldset -->
+	<p>
+		<input type="submit" value="Submit"><!-- A Submit button -->
+		<input type="reset" value="Cancel"><!-- A Reset button -->
+	</p>
+	</form>
+	</div>
+<!--End of Form -->
+
+</article>
+<!-- End of Article -->
+
+<!-- Start of Footer -->
+<footer id="footer"><!-- A container for the footer -->
+	<p>&copy; <a href="about.html" target="window_name">Shawn Wong Yi Yu</a> | Last updated: 21 November 2020</p>
+</footer>
+<!-- End of Footer -->
+
+</body>
+<!-- End of Body -->
+</html>
+<!-- End of HTML -->

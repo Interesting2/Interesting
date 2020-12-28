@@ -1,0 +1,418 @@
+/* External CSS */
+/* Description: External CSS for the website*/
+/* Author: Shawn Wong Yi Yu */
+/* Date: 10 November 2020 */
+/* Validated date: OK 21 November 2020 */
+
+/* To style the header */
+header{
+	background-color: #0C2D48;
+	padding: 40px 0;
+    position: relative;
+    border-bottom: 3px solid #000000;
+}
+
+/* To style the logo in the header section */
+.logo{
+	width: 100px;
+	margin: 0% 20px;
+	float: left;
+	text-align: center;
+}
+
+/* To style the navigation bar */
+nav ul{
+	list-style-type: none;
+	padding: 0;
+	margin: 10px;
+	float: right;
+}
+
+/* To style the navigation bar */
+nav ul li{
+	display: inline-block;
+	margin: 0% 20px;
+}
+
+/* To style the links in the navigation bar */
+nav ul li a{
+	color: white;    
+	font-weight: bold;
+}
+
+/* To style the links in the navigation bar */
+li a:hover{
+	color: #75E6DA;
+}
+
+/* To hide the underline decoration for the hyperlinks */
+a{
+	text-decoration: none;
+}
+
+/* To style the for hyperlinks */
+footer a:visited{
+	color: black;
+}
+
+/* To style the for the hyperlinks */
+footer a:hover{
+	color: #75E6DA;
+}
+
+body{
+	font-family: Verdana, Helevetica, sans-serif;
+	max-width: 5000px;
+	margin: 0 auto;
+}
+
+/* To style the intro image in the article section */
+#intro-image{
+	background-image: url('images/intro-image.jpg'); /* This picture is taken from https://www.anaharnewsmaroc.com/product_info.php?c=best%20smartphones%202019%20the%20very%20best%20phones */
+	background-repeat:no-repeat;
+	background-size: 2300px;
+	background-attachment: fixed;
+}
+
+/* To style the introduction */
+.intro{
+	color: white;
+    font-size: 1em;
+    font-weight: 300;
+    line-height: 2;
+	margin-left: 150px;
+}
+
+/* To style the intro image in the article section */
+#intro-image1{
+	background-image: url('images/applebanner.jpg'); /* This picture is taken from https://news.sky.com/story/apple-launches-four-new-5g-enabled-iphone-12-models-including-mini-and-pro-versions-12103418 */
+	background-repeat:no-repeat;
+	background-size: 1600px;
+	background-position: center;
+	background-attachment: fixed;
+}
+
+/* To style the intro image in the article section */
+#intro-image2{
+	background-image: url('images/samsungbanner.jpg'); /* This picture is taken from https://www.google.com/search?q=samsung+advertisement+2020&hl=en&source=lnms&tbm=isch&sa=X&ved=2ahUKEwjpwp6ZwIztAhUtG6YKHUd8BwcQ_AUoAnoECAMQBA&biw=1283&bih=550&dpr=1.5#imgrc=wN4NanVNNz6OxM */
+	background-repeat:no-repeat;
+	background-size: 1900px;
+	background-position: center;
+	background-attachment: fixed;
+}
+
+/* To style the intro image in the article section */
+#intro-image3{
+	background-image: url('images/googlebanner.jpg'); /* This picture is taken from https://www.anandtech.com/show/15948/google-teases-pixel-4a-5g-and-pixel-5-later-this-year */
+	background-repeat:no-repeat;
+	background-size: 1200px;
+	background-position: center;
+	background-attachment: fixed;
+}
+
+/* To style the image for the specs */
+#imgspec1 {
+	width: 245px;
+	height: 325px;
+	margin-left: 150px;
+	margin-right: 50px;
+	float: left;
+}
+
+/* To style the image for the specs */
+#imgspec2 {
+	width: 237px;
+	height: 325px;
+	margin-left: 150px;
+	margin-right: 50px;
+	float: left;
+}
+
+/* To style the image for the specs */
+#imgspec3 {
+	width: 238.5px;
+	height: 325px;
+	margin-left: 150px;
+	margin-right: 50px;
+	float: left;
+}
+
+/* To style the image for the specs */
+#imgspec4 {
+	width: 313.5px;
+	height: 325px;
+	margin-left: 150px;
+	margin-right: 50px;
+	float: left;
+}
+
+/* To style the image for the specs */
+#imgspec5 {
+	width: 355px;
+	height: 302px;
+	margin-left: 150px;
+	margin-right: 50px;
+	float: left;
+}
+
+/* To style the image for the specs */
+#imgspec6 {
+	width: 355px;
+	height: 308.5px;
+	margin-left: 150px;
+	margin-right: 50px;
+	float: left;
+}
+
+/* To style the image for the specs */
+#imgspec7 {
+	width: 340px;
+	height: 310px;
+	margin-left: 150px;
+	margin-right: 50px;
+	float: left;
+}
+
+/* To style the image for the specs */
+#imgspec8 {
+	width: 341.5px;
+	height: 315px;
+	margin-left: 150px;
+	margin-right: 50px;
+	float: left;
+}
+
+/* To style the image for the specs */
+#imgspec9 {
+	width: 269.5px;
+	height: 325px;
+	margin-left: 150px;
+	margin-right: 50px;
+	float: left;
+}
+
+/* To style the table for the specs */
+.spec{
+	padding-bottom: 100px;
+	padding-right: 130px;
+	border-spacing: 12px 10px;
+}
+
+/* To style for heading 2 */
+h3{
+	background-color: #05445E;     
+	color: white;
+	font-size: 1.5em;
+    font-weight: bold;
+    line-height: 2;
+	text-align: left;
+	margin-right: 150px;
+	padding-left: 150px;
+}
+
+/* To style the content */
+.column1{
+    font-size: 1em;
+    font-weight: 300;
+    line-height: 2;
+	margin-left: 150px;
+	margin-right: 150px;
+	text-align: left;
+	
+}
+
+/* To style for heading 3 */
+h4{
+	font-size: 1.5em;
+    font-weight: bold;
+    line-height: 3;
+	text-align: center;
+}
+
+/* To resize the image for the content */
+.img{
+	width: 600px;
+	height: 400px;
+	padding: 10px;
+}
+
+/* To style the content */
+.column2{
+	text-align: center;
+}
+
+/* To resize the fonts */	
+p{
+	font-size: 16px;
+	font-weight: 300;
+}
+
+/* To style the disclaimer for home page */
+#disclaimer{
+	background-color: #0C2D48;
+	padding: 15px;
+	text-align: center;
+	color: white;
+	margin: 0 auto;
+	border-top: 3px solid #000000;
+	padding-left: 200px;
+	padding-right: 200px;
+}
+
+/* To resize the font */
+Section p{
+		font-size: 13px;
+}
+
+/* To resize the font */
+footer p{
+	font-size: 13px;
+}
+
+/* To style the footer */
+#footer{
+	border-top: 3px solid #474542;
+	padding: 10px;
+	text-align: center;
+}
+
+/* To style the heading for about */
+.head1{
+	text-align: center;
+}
+
+/* To style the content for about */
+.about{
+	list-style: square;
+	padding-top: 50px;
+	padding-left: 200px;
+	padding-right: 200px;
+	padding-bottom: 50px;
+	line-height: 1.75;
+}
+
+/* To style the image for about */
+.about-photo{
+	border: 3px dashed #189AB4;
+	width: 209.2px;
+	height: 279px;
+	margin-top: 50px;
+	margin-left: 150px;
+	margin-right: 50px;
+	float: left;
+}
+
+/* To adjust the spacing of the form */
+.feedback-form{
+	max-width: 900px;
+	margin: 0 auto;
+}
+
+/* To adjust the spacing of the form */
+form{
+	padding: 30px 0px;
+}
+
+/* To add colours for background and adjust spacing for first form */
+#userinfo{
+	background-color: #05445E;
+	border-style: none;
+	padding: 15px;
+	margin: 10px 100px;
+}
+
+/* To add colours for background and adjust spacing for second form */
+#usersatis{
+	background-color: #05445E;
+	border-style: none;
+	padding: 15px;
+	margin: 10px -35px;
+}
+
+/* To style the first form */
+.form1{
+	font-size: 15px;
+	padding: 20px 0px;
+	color: white;
+	margin: 0 auto;
+
+}
+
+/* To adjust the spacing */
+td{
+	line-height: 25px;
+}
+
+/* To style the second form */
+.form2{
+	font-size: 15px;
+	padding: 20px 15px;
+	color: white;
+	margin: 0 auto;
+}
+
+/* To style the caption for the form */
+legend{
+	width: 600px;
+	background-color: #189AB4;
+	margin: auto;
+	color: white;
+	padding: 10px 0px;
+	text-align: center;
+}
+
+/* To style the submit button for the form */
+input[type = "submit"]{
+    background-color: #189AB4;
+    border: none;
+    text-decoration: none;
+    color: white;
+    padding: 7px 15px;
+    margin: 10px 0px;
+    cursor: pointer;
+	margin-left: 750px;
+}
+
+/* To style the reset button for the form */
+input[type = "reset"]{
+    background-color: #189AB4;
+    border: none;
+    text-decoration: none;
+    color: white;
+    padding: 7px 15px;
+    margin: 10px 0px;
+    cursor: pointer;
+}
+
+/* To style the input of text and email */
+input[type = "text"], input[type = "email"]{
+	padding: 2px;
+	border: none;
+	border-bottom: 2px solid #75E6DA;
+}
+
+/* To style the color of the text */
+#hosted{
+	color: white;
+}
+
+/* To style the heading */
+h5{
+	font-size: 1.5em;
+    font-weight: bold;
+	text-align: center;
+}
+
+/* To style the image icon */
+.contact{
+	width: 64px;
+	height: 64px;
+	padding: 5px;
+}
+
+/* To style the alignment and spacing between the footer */
+.social{
+	text-align: center;
+	margin-bottom: 10px;
+	
+}
