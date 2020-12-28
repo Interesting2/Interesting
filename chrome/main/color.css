@@ -1,0 +1,279 @@
+/* clear all paddings */
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.slide1, .slide2 {
+    display: none;
+}
+img {
+    vertical-align:middle;
+}
+ 
+html {
+    font-size: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* remove underline */
+a { 
+    text-decoration: none;
+}
+
+/* flex and center */
+.heroContainer {
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+
+
+/* logo */
+.logo {
+    position: relative;
+    min-height: 5vh;
+
+}
+
+
+/* Hero Section */
+
+#hero {
+    background-image: url(background.png);
+    background-size: cover;
+    background-position: top center;
+    position: relative;
+    z-index: 1;
+
+}
+/* over lapping elements */
+
+#hero::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    top:0;
+    height: 100%;
+    width: 100%;
+    background-color: black;
+    opacity: 0.4;
+    z-index: -1;
+}
+
+/* hero section padding and max width */
+
+#hero .hero {
+    max-width: 2300px;
+    margin: 0;
+    padding: 0 50px;
+}
+#hero h1 {
+    display: block;
+    width: fit-content;
+    font-size: 5rem;
+    position: relative;
+    color: lightpink;
+}
+
+/* box animation / position absolute */
+
+#hero h1 span { 
+    position: absolute;
+    height: 100%;
+    width: 0;
+    background-color: whitesmoke;
+    animation: box 0.4s ease;
+    animation-delay: 0.1s;
+    animation-direction: alternate-reverse;
+}
+.button {
+    display: inline-block;
+    padding: 5px 10px;
+    color: lightgrey;
+    background-color: transparent;
+    border: 3px solid grey;
+    font-size: 2rem;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    margin-top: 30px;
+    transition: ease-out .8s; 
+}
+
+.button:hover {
+    color: white;
+    background-color: grey;
+}
+
+/*ghost section */
+#ghosts {
+    background-image: url(world.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    position: relative;
+    z-index: 1;
+}
+
+#ghosts::after{
+    content: '';
+    position: absolute;
+    left: 0;
+    top:0;
+    height: 100%;
+    width: 100%;
+    background-color: black;
+    opacity: 0.3;
+    z-index: -1;
+}
+
+
+.section {
+    text-align: center;
+    padding: 5px 80px;
+}
+
+
+#ghosts .ghost {
+    flex-direction: column;
+    margin: 0 auto;
+    align-items: center;
+    max-width: 1500px;
+    
+}
+
+
+#ghosts .section-title {
+    font-size: 60px;
+    font-weight: 400;
+    margin-bottom: 10px;
+    margin-top: 0;
+    align-items: center;
+    font-family: "Lato", sans-serif;
+    color: blue;
+    text-transform: uppercase;
+    text-align: center;
+
+    display:block;
+    position: relative;
+}
+
+#ghosts .section-title span {
+    font-size: 60px;
+    font-weight: 550;
+    color: navy;
+}
+
+#ghosts .ghost-top p {
+    font-size: 2rem;
+    letter-spacing: .2rem;
+    margin-bottom: 30px;
+    margin-top: 40px;
+
+}
+
+/* slideshow */
+
+#ghosts .slideshow-container {
+    position: relative;
+    width: fit-content;
+}
+
+#ghosts .slideshow-container .alienSlides{
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    margin-left: 700px;
+    justify-content: center;
+    align-items: flex-start;
+    min-height: 5vh;
+    position: relative;
+    
+}
+
+#ghosts .slideshow-container .ghostSlides{
+    display: flex;
+    flex-direction: column;
+    margin-left: 300px;
+    justify-content: center;
+    align-items: left;
+}
+
+
+
+
+
+#ghosts .ghost-bottom {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+#ghosts .ghost-item {
+    flex-basis: 80%;
+    display:flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: row;
+    padding: 30px;
+    border-radius: 30px;
+    background-image: url(/ambusher.png);
+    background-size: cover;
+    margin: 300px 5%;
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+}
+
+#ghosts .ghost-item::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    top:0;
+    height: 100%;
+    width: 100%;
+    background-color: pink;
+    opacity: 0.4;
+    z-index: -1;
+}
+
+#ghosts .ghost-item h2 {
+    text-transform: uppercase;
+    padding: 15px;
+    text-align: center;
+    font-size: 2.2rem;
+}
+
+#ghosts .ghost-item p {
+    padding: 10px;
+    font-size: 1.5rem;
+}
+
+#ghosts .ghost-item img {
+    
+}
+
+
+
+
+
+/* animations */
+
+@keyframes box {
+    50% {
+        width: 100%;
+        left: 0;
+    }
+    100% {
+        width: 0;
+        left: 100%;
+    }
+}
+
