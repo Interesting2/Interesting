@@ -1,0 +1,132 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+
+}
+
+body {
+  margin: auto;
+  text-align: center;
+  background-color:#edf9fa;
+}
+
+.container {
+  position: relative;
+  top:100px;
+}
+
+.underline {
+  margin: auto;
+  font-size: 30px;
+  padding-bottom: 50px;
+  font-weight: bolder;
+  color: darkblue;
+
+}
+.title h2 {
+  text-transform: uppercase;
+  font-size: 2.5em;
+  padding-bottom: 10px;
+}
+
+.review {
+  background-color: white;
+  width: 800px;
+  height: 550px;
+  margin: auto;
+  border: 3px solid grey;
+  border-style:groove;
+  border-radius: 10px;
+
+}
+.review:hover {
+  box-shadow: 5px 5px 3px 3px rgba(0, 140, 186, 0.5);
+
+}
+
+#author {
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 25px;
+}
+#occupation {
+  text-transform: uppercase;
+  color: rgba(0, 110, 230, 0.5);
+  text-shadow: 0.4px 0.4px grey;
+  font-size: 15px;
+  font-style: italic;
+  padding: 10px;
+}
+
+#description {
+  position: relative;
+  margin: auto;
+  padding: 30px;
+
+}
+
+.button-container {
+  color: silver;
+  padding-bottom: 10px;
+
+}
+
+.prev-button {
+  font-size: 18px;
+  border: 3px solid #88e4eb;
+  border-radius: 10px;
+  color: #3ab1ba;
+
+
+}
+.other-button {
+  font-size: 18px;
+  border: 3px solid #88e4eb;
+  border-radius: 10px;
+  color: #3ab1ba;
+
+}
+.next-button {
+  font-size: 18px;
+  border: 3px solid #88e4eb;
+  border-radius: 10px;
+  color: #3ab1ba;
+
+}
+
+.prev-button:hover {
+
+  color: grey;
+
+
+}
+a:hover {
+
+  color: grey;
+}
+.next-button:hover {
+
+  color: grey;
+
+}
+a {
+  text-decoration: none;
+  color: #038c96;
+
+}
+li {
+  list-style-type: none;
+
+}
+
+.img-container {
+  width: 500px;
+  height: 300px;
+  margin: auto;
+
+}
+#person-img{
+  width: 230px;
+  height: 230px;
+}
